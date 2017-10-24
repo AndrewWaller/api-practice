@@ -5,6 +5,7 @@ function queryRandomUserAPI() {
   var url = 'https://randomuser.me/api/?results=10';
   fetch(url) // Call the fetch function passing the url of the API as a parameter
     .then(function(resp){
+      console.log(resp);
       return resp.json()// Transform the data into json
     })
     .then(function(data) {
